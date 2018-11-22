@@ -33,6 +33,9 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
+    signingOption: manual
+    signingIdentity: $(APPLE_CERTIFICATE_SIGNING_IDENTITY)
+    provisioningProfileUuid: $(APPLE_PROV_PROFILE_UUID)
     packageApp: true
 
 
