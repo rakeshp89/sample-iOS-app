@@ -17,7 +17,7 @@ steps:
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository
-    #provProfileSecureFile: # Required when provisioningProfileLocation == SecureFiles
+    provProfileSecureFile: 'MF_iOS_Apps_App__Dev_Prof.mobileprovision' # Required when provisioningProfileLocation == SecureFiles
     #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
     #removeProfile: # Optional
 
