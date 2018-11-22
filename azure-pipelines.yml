@@ -21,11 +21,11 @@ steps:
     #provProfileSourceRepository: # Required when provisioningProfileLocation == SourceRepository
     #removeProfile: # Optional
 
-# Install Apple Certificate
-# Install an Apple certificate required to build on a macOS agent
-# - task: InstallAppleCertificate@2
-#   inputs:
-#     certSecureFile: 'Certificates.p12'
+#Install Apple Certificate
+#Install an Apple certificate required to build on a macOS agent
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'Certificates.p12'
 
 - task: Xcode@5
   inputs:
