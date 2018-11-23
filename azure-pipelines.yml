@@ -63,7 +63,7 @@ steps:
 # Distribute app builds to testers and users via App Center
 - task: AppCenterDistribute@1
   inputs:
-    serverEndpoint: 'azureSubscription' 
+    serverEndpoint: azureSubscription
     appSlug: 'rakpurus/test-iOS'
     appFile: '$(build.artifactstagingdirectory)\$(IPAName)'
     symbolsOption: 'Apple' # Optional. Options: apple
