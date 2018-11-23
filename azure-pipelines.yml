@@ -66,15 +66,14 @@ steps:
     serverEndpoint: 'azureSubscription' 
     appSlug: 'rakpurus/test-iOS'
     appFile: '$(build.artifactstagingdirectory)\$(IPAName)'
-    releaseNotesInput: Notes
-    #symbolsOption: 'Apple' # Optional. Options: apple
+    symbolsOption: 'Apple' # Optional. Options: apple
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
     #symbolsDsymFiles: # Optional
     #symbolsMappingTxtFile: # Optional
     #symbolsIncludeParentDirectory: # Optional
-    #releaseNotesOption: 'input' # Options: input, file
-    #releaseNotesInput: # Required when releaseNotesOption == Input
+    releaseNotesOption: 'input' # Options: input, file
+    releaseNotesInput: Notes # Required when releaseNotesOption == Input
     #releaseNotesFile: # Required when releaseNotesOption == File
     #distributionGroupId: # Optional
 
