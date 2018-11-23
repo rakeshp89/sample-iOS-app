@@ -27,7 +27,7 @@ steps:
   inputs:
     certSecureFile: 'Certificates.p12'
     keychain: 'temp' # Options: default, temp, custom
-    
+
 
 - task: Xcode@5
   inputs:
@@ -51,6 +51,11 @@ steps:
     #parallel: false # Optional
     #parallelCount: # Optional
     
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.ipa'
+    targetFolder: '$(build.artifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
        
 # # Xcode
 # # Build, test, or archive an Xcode workspace on macOS. Optionally package an app.
