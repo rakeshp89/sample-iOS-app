@@ -66,7 +66,7 @@ steps:
     serverEndpoint: azureSubscription
     appSlug: 'rakpurus/test-iOS'
     appFile: '$(build.artifactstagingdirectory)\$(IPAName)'
-    symbolsOption: 'Apple' # Optional. Options: apple
+    #symbolsOption: 'Apple' # Optional. Options: apple
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
     #symbolsDsymFiles: # Optional
