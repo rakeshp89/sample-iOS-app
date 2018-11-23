@@ -26,6 +26,8 @@ steps:
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'Certificates.p12'
+    keychain: 'temp' # Options: default, temp, custom
+    
 
 - task: Xcode@5
   inputs:
