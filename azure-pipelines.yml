@@ -65,7 +65,7 @@ steps:
   inputs:
     serverEndpoint: azureSubscription
     appSlug: 'rakpurus/test-iOS'
-    appFile: '$(build.artifactstagingdirectory)\$(IPAName)'
+    appFile: '/Users/vsts/agent/2.142.1/work/1/s/output/$(SDK)/$(Configuration)/iOSHelloWorld.ipa'
     #symbolsOption: 'Apple' # Optional. Options: apple
     #symbolsPath: # Optional
     #symbolsPdbFiles: '**/*.pdb' # Optional
