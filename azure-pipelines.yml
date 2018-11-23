@@ -56,6 +56,30 @@ steps:
     contents: '**/*.ipa'
     targetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
+
+
+
+# App Center Distribute
+# Distribute app builds to testers and users via App Center
+- task: AppCenterDistribute@1
+  inputs:
+    serverEndpoint: 'azureSubscription' 
+    appSlug: 'rakpurus/test-iOS'
+    appFile: '$(build.artifactstagingdirectory)\$(IPAName)'
+    releaseNotesInput: Notes
+    #symbolsOption: 'Apple' # Optional. Options: apple
+    #symbolsPath: # Optional
+    #symbolsPdbFiles: '**/*.pdb' # Optional
+    #symbolsDsymFiles: # Optional
+    #symbolsMappingTxtFile: # Optional
+    #symbolsIncludeParentDirectory: # Optional
+    #releaseNotesOption: 'input' # Options: input, file
+    #releaseNotesInput: # Required when releaseNotesOption == Input
+    #releaseNotesFile: # Required when releaseNotesOption == File
+    #distributionGroupId: # Optional
+
+
+
        
 # # Xcode
 # # Build, test, or archive an Xcode workspace on macOS. Optionally package an app.
