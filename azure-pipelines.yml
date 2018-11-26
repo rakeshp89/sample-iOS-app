@@ -42,7 +42,7 @@ steps:
 
 - task: Xcode@5
   inputs:
-    scheme: ''
+    scheme: 'iOSHelloWorld'
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
