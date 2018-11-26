@@ -20,6 +20,34 @@
                ReferencedContainer = "container:iOSHelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D24408E81F6873A700D58AC7"
+               BuildableName = "iOSHelloWorldTests.xctest"
+               BlueprintName = "iOSHelloWorldTests"
+               ReferencedContainer = "container:iOSHelloWorld.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D24408F31F6873A700D58AC7"
+               BuildableName = "iOSHelloWorldUITests.xctest"
+               BlueprintName = "iOSHelloWorldUITests"
+               ReferencedContainer = "container:iOSHelloWorld.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
