@@ -34,7 +34,7 @@ steps:
    scheme: 'iOSHelloWorldTests'
    sdk: 'iphonesimulator' 
    destinationPlatformOption: 'iOS' # Optional. Options: default, iOS, tvOS, macOS, custom
-   #destinationPlatform: 'iOS Simulator' # Optional
+   destinationPlatform: 'iOS Simulator' # Optional
    destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
    destinationSimulators: 'iPhone X,OS=11.1' # Optional 
    #destinationDevices: # Optional
