@@ -31,7 +31,8 @@ steps:
 - task: Xcode@5
   inputs:
    actions: 'test'
-   sdk: 'iphoneos' 
+   scheme: 'iOSHelloWorldTests'
+   sdk: 'iphonesimulator' 
 
 - task: Xcode@5
   inputs:
