@@ -28,10 +28,12 @@ steps:
     certSecureFile: 'Certificates.p12'
     keychain: 'temp' # Options: default, temp, custom
 
+- task: Xcode@5
+  inputs:
+   actions: 'test' 
 
 - task: Xcode@5
   inputs:
-    actions: 'test'
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Release'
