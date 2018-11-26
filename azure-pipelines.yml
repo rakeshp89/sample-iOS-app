@@ -30,7 +30,8 @@ steps:
 
 - task: Xcode@5
   inputs:
-   actions: 'test' 
+   actions: 'test'
+   sdk: 'iphoneos' 
 
 - task: Xcode@5
   inputs:
