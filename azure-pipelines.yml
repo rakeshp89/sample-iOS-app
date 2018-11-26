@@ -31,7 +31,7 @@ steps:
 - task: Xcode@5
   inputs:
    actions: 'test'
-   scheme: 'iOSHelloWorldTests'
+   scheme: ''
    sdk: 'iphonesimulator' 
    destinationPlatformOption: 'default' # Optional. Options: default, iOS, tvOS, macOS, custom
     # destinationPlatform: # Optional
