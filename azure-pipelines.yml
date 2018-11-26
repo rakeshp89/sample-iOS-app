@@ -37,7 +37,7 @@ steps:
    destinationPlatform: 'iOS Simulator' # Optional
    destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
    destinationSimulators: 'iPhone 7' # Optional 
-   destinationDevices: # Optional
+   #destinationDevices: # Optional
 
 
 - task: Xcode@5
