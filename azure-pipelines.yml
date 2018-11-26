@@ -28,16 +28,16 @@ steps:
     certSecureFile: 'Certificates.p12'
     keychain: 'temp' # Options: default, temp, custom
 
-- task: Xcode@5
-  inputs:
-   actions: 'test'
-   scheme: 'iOSHelloWorldTests'
-   sdk: 'iphonesimulator' 
-   destinationPlatformOption: 'iOS' # Optional. Options: default, iOS, tvOS, macOS, custom
-   destinationPlatform: 'iOS Simulator' # Optional
-   destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
-   destinationSimulators: 'iPhone 7' # Optional 
-   #destinationDevices: # Optional
+# - task: Xcode@5
+#   inputs:
+#    actions: 'test'
+#    scheme: 'iOSHelloWorldTests'
+#    sdk: 'iphonesimulator' 
+#    destinationPlatformOption: 'iOS' # Optional. Options: default, iOS, tvOS, macOS, custom
+#    destinationPlatform: 'iOS Simulator' # Optional
+#    destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
+#    destinationSimulators: 'iPhone 7' # Optional 
+#    #destinationDevices: # Optional
 
 
 - task: Xcode@5
